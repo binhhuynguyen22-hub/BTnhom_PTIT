@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản Lý Sinh Viên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>HỆ THỐNG QUẢN LÝ SINH VIÊN</h1>
+        <p>Website quản lý sinh viên đơn giản</p>
+    </header>
+
+    <main class="container">
+
+        <section class="form-section">
+            <h2>Thêm sinh viên</h2>
+
+            <input type="text" id="id" placeholder="Mã sinh viên">
+            <input type="text" id="name" placeholder="Họ và tên">
+            <input type="text" id="class" placeholder="Lớp">
+            <input type="number" id="age" placeholder="Tuổi">
+
+            <button onclick="addStudent()">Thêm sinh viên</button>
+        </section>
+
+        <section class="table-section">
+            <h2>Danh sách sinh viên</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>MSSV</th>
+                        <th>Họ tên</th>
+                        <th>Lớp</th>
+                        <th>Tuổi</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody id="studentList">
+                    <!-- JS render -->
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Nhóm sinh viên</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
